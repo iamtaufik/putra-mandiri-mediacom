@@ -18,6 +18,20 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    window.onscroll = () => {
+      const header = document.querySelector('header');
+      if (!header) return;
+      const fixedNav = header.offsetTop;
+
+      if (window.scrollY > fixedNav) {
+        header.classList.add('navbar-fixed');
+      } else {
+        header.classList.remove('navbar-fixed');
+      }
+    };
+  }, []);
+
+  useEffect(() => {
     if (window.document) {
       window.document.addEventListener('click', listener);
     }
@@ -27,7 +41,7 @@ const Navbar = () => {
     };
   }, [sidebarRef, handleSidebar]);
   return (
-    <header id="header" className="fixed w-full bg-white shadow-sm z-50">
+    <header id="header" className="bg-transparent fixed w-full shadow-sm z-50">
       <nav className="container mx-auto px-6 py-4 md:py-6 flex md:block justify-between items-center">
         <div className="flex items-center justify-between">
           <div className="flex items-center">

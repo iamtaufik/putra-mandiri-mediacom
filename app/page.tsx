@@ -8,7 +8,7 @@ import WhyusSection from '@/components/whyus-section';
 
 export default function Home() {
   return (
-    <main className="h-full text-base overflow-x-hidden">
+    <main className="h-full text-base overflow-x-hidden ">
       <Navbar />
       <HeroSection />
       <ServiceSection />
