@@ -28,7 +28,7 @@ const Navbar = () => {
   }, [sidebarRef, handleSidebar]);
   return (
     <header id="header" className="fixed w-full bg-white shadow-sm z-50">
-      <nav className="container mx-auto px-6 py-6 flex md:block justify-between items-center">
+      <nav className="container mx-auto px-6 py-4 md:py-6 flex md:block justify-between items-center">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <span className="text-xl font-bold text-gray-800">Putra Mandiri Mediacom</span>
