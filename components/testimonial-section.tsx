@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import axios from 'axios';
-import { Review } from '@/types/reviews';
+import type { Review } from '@/types/reviews';
 import Image from 'next/image';
 import ReviewSkeleton from '@/components/review-skeleton';
 
