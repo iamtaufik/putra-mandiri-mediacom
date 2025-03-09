@@ -11,19 +11,15 @@ const ContactSection = () => {
             <h3 className="text-xl font-bold text-gray-800 mb-6">Informasi Kontak</h3>
             <div className="space-y-4">
               <div className="flex items-center">
-                <MapPin size={24} className="text-orange-500 mr-2" />
-                <p className="text-gray-600">Jl. Raya Contoh No. 123, Jakarta</p>
+                <MapPin size={24} className="text-sky-500 mr-2" />
+                <p className="text-gray-600">Jl. Panggang-Wonosari, Gunung Kidul, Yogyakarta</p>
               </div>
               <div className="flex items-center">
-                <Phone size={24} className="text-orange-500 mr-2" />
-                <p className="text-gray-600">+62 812-3456-7890</p>
+                <Phone size={24} className="text-sky-500 mr-2" />
+                <p className="text-gray-600">+62 8315-0269-754</p>
               </div>
               <div className="flex items-center">
-                <Mail size={24} className="text-orange-500 mr-2" />
-                <p className="text-gray-600">info@putramandiri.com</p>
-              </div>
-              <div className="flex items-center">
-                <Clock size={24} className="text-orange-500 mr-2" />
+                <Clock size={24} className="text-sky-500 mr-2" />
                 <p className="text-gray-600">Senin - Sabtu: 09:00 - 18:00</p>
               </div>
             </div>
